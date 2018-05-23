@@ -12,12 +12,17 @@ function addExcitement(theWordArray) {
     let buildMeUp = "";
    
     for (let i = 0; i < theWordArray.length; i++) {
-        buildMeUp = `${buildMeUp} ${theWordArray[i]}`;
-    
-        console.log(buildMeUp);
+        if ((i+1) % 3 === 0) {
+            buildMeUp = `${buildMeUp} ${theWordArray[i]}!`;
+        } else {
+            buildMeUp = `${buildMeUp} ${theWordArray[i]}`;
+        }
+        console.log(buildMeUp)
     }
 
 }
-
 // Invoke the function and pass in the array
 addExcitement(sentence)
+
+// If the current value of the counter variable can be evenly divided by 3 
+// using the JavaScript remainder operator - then add a single exclamation point(!) to the output.
