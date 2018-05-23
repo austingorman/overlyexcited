@@ -10,10 +10,12 @@ function addExcitement(theWordArray) {
 
     // Each time the for loop executes, you're going to add one more word to this string
     let buildMeUp = "";
-   
+    let exCount = "";
     for (let i = 0; i < theWordArray.length; i++) {
         if ((i+1) % 3 === 0) {
-            buildMeUp = `${buildMeUp} ${theWordArray[i]}!`;
+            buildMeUp = `${buildMeUp} ${theWordArray[i]}`;
+            exCount = `${exCount}!`;
+            buildMeUp = `${buildMeUp} ${exCount}`;
         } else {
             buildMeUp = `${buildMeUp} ${theWordArray[i]}`;
         }
