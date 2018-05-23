@@ -12,7 +12,7 @@ function addExcitement(theWordArray) {
     let buildMeUp = "";
    
     for (let i = 0; i < theWordArray.length; i++) {
-        buildMeUp = `${buildMeUp} ${theWordArray[i]} `;
+        buildMeUp = `${buildMeUp} ${theWordArray[i]}`;
     
         console.log(buildMeUp);
     }
